@@ -1,3 +1,6 @@
+// +build windows linux darwin
+// +build 386 amd64
+
 package main
 
 import "net/http"
