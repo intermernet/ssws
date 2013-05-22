@@ -1,4 +1,4 @@
-=ssws is a Simple Static Web Server written in Go=
+#ssws is a Simple Static Web Server written in Go#
 
 It has 2 optional flags:
 
@@ -8,7 +8,7 @@ It has 2 optional flags:
 
 It requires a directory names `www` to be in the same directory that the program is launched from.
 
-==Example usage:==
+##Example usage:##
 
 `ssws -port=8080 -local=no` will run the server on TCP/IP port 8080 and will be accessible from all interfaces (depending on firewall and other network configuration).
 
