@@ -6,7 +6,8 @@ It has 2 optional flags:
 
 `-local` controls if the server is only listening on `localhost` (Set true or false, defaults to true)
 
-It requires a directory names `www` to be in the same directory that the program is launched from.
+It requires a directory named `www` to be in the same directory that the program is launched from.
+Your site structure should go into the `www` folder.
 
 ###Example usage:###
 
