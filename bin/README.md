@@ -1,5 +1,9 @@
 ###ssws is a Simple Static Web Server written in [Go][1]###
 
+It's good for simple testing of html, css and javascript on your local machine. You can also use it for demonstrating ideas or mockups without a net connection, as a simple, single binary replacement to things like [Python's][6] `SimpleHTTPServer`, or just to play around with web development.
+
+For more serious use, because it's so simple (50 lines of code), and written in [Go's][1] standard libraries, it should be quite reliable and performant, and may be a good choice as a static file server behind a proxy.
+
 It has 4 optional flags:
 
 `-port` will set the TCP/IP port to listen on (defaults to port 80)
@@ -21,7 +25,7 @@ It has 4 optional flags:
 `ssws -port=8080 -path=/home/bob/ht_docs -urlpath=files` will run the server on TCP/IP port 8080, will serve files from the directory `/home/bob/ht_docs`, and will only be accessible at `http://localhost:8080/files/` .
 
 ####Downloads####
-
+*~ 1.3MB*
 - Linux 64 bit ([tar.gz][2]|[deb][3])
 - Windows 64 bit ([zip][4])
 - OSX 64 bit([zip][5])
@@ -33,3 +37,4 @@ NOTE: This program has been tested on Windows 8 64bit, and Ubuntu 13.04
 [3]: https://github.com/Intermernet/ssws/blob/master/bin/linux_amd64/ssws_amd64.deb?raw=true
 [4]: https://github.com/Intermernet/ssws/blob/master/bin/windows_amd64/ssws_windows_amd64.zip?raw=true
 [5]: https://github.com/Intermernet/ssws/blob/master/bin/darwin_amd64/ssws_darwin_amd64.zip?raw=true
+[6]: http://python.org
