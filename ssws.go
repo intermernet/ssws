@@ -17,6 +17,11 @@ import (
 	"strings"
 )
 
+const (
+	ps  = os.PathSeparator
+	ups = "/"
+)
+
 var port string
 var local bool
 var path string
@@ -35,12 +40,12 @@ func main() {
 	if local != true {
 		addr = ":" + port
 	}
-	ps := string(os.PathSeparator)
+	ps := string(ps)
 	if !strings.HasSuffix(path, ps) {
 		path = path + ps
 	}
-	if !strings.HasPrefix(urlpath, "/") {
-		urlpath = "/" + urlpath
+	if !strings.HasPrefix(urlpath, ups) {
+		urlpath = ups + urlpath
 	}
 	http.Handle(urlpath, http.StripPrefix(urlpath, http.FileServer(http.Dir(path))))
 	fmt.Printf("\nServing files from %s on TCP/IP port %s\nlocalhost only=%t\nURL Path=%s\n", path, port, local, urlpath)
