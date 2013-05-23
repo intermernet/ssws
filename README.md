@@ -14,10 +14,10 @@ It has 4 optional flags:
 
 `ssws` will run the server on TCP/IP port 80 and will only be accessible locally.
 
-`ssws -port=8080 -local=true` will run the server on TCP/IP port 8080 and will only be accessible at `http://localhost/` .
+`ssws -port=8080 -local=true` will run the server on TCP/IP port 8080 and will only be accessible at `http://localhost:8080/` .
 
 `ssws -port=8080 -local=false -path=ht_docs` will run the server on TCP/IP port 8080, will serve files from the directory `ht_docs` in the current directory, and will be accessible from all interfaces (depending on firewall and other network configuration).
 
-`ssws -port=8080 -path=ht_docs -urlpath=files` will run the server on TCP/IP port 8080, will serve files from the directory `ht_docs` in the current directory, and will only be accessible at `http://localhost/files/` .
+`ssws -port=8080 -path=ht_docs -urlpath=files` will run the server on TCP/IP port 8080, will serve files from the directory `ht_docs` in the current directory, and will only be accessible at `http://localhost:8080/files/` .
 
 [1]: http://golang.org
