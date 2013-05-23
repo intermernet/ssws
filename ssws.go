@@ -30,9 +30,9 @@ func init() {
 
 func main() {
 	flag.Parse()
-	adr := "localhost:" + port
+	addr := "localhost:" + port
 	if local != true {
-		adr = ":" + port
+		addr = ":" + port
 	}
 	ps := string(os.PathSeparator)
 	if !strings.HasSuffix(path, ps) {
@@ -42,7 +42,7 @@ func main() {
 		urlpath = "/" + urlpath
 	}
 	http.Handle(urlpath, http.StripPrefix(urlpath, http.FileServer(http.Dir(path))))
-	if err := http.ListenAndServe(adr, nil); err != nil {
+	if err := http.ListenAndServe(addr, nil); err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
 }
