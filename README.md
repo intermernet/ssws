@@ -24,8 +24,8 @@ It has 4 optional flags:
 
 `ssws -port=8080 -path=/home/bob/ht_docs -urlpath=files` will run the server on TCP/IP port 8080, will serve files from the directory `/home/bob/ht_docs`, and will only be accessible at `http://localhost:8080/files/` .
 
-####Downloads (*~1.3MB*)####
-
+####Downloads####
+*~ 1.3MB*
 - Linux 64 bit ([tar.gz][2]|[deb][3])
 - Windows 64 bit ([zip][4])
 - OSX 64 bit([zip][5])
