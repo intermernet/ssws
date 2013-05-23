@@ -10,7 +10,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -48,7 +47,7 @@ func main() {
 		urlpath = ups + urlpath
 	}
 	http.Handle(urlpath, http.StripPrefix(urlpath, http.FileServer(http.Dir(path))))
-	fmt.Printf("\nServing files from %s on TCP/IP port %s\nlocalhost only=%t\nURL Path=%s\n", path, port, local, urlpath)
+	log.Printf("\nServing files from %s on TCP/IP port %s\nlocalhost only=%t\nURL Path=%s\n", path, port, local, urlpath)
 	if err := http.ListenAndServe(addr, nil); err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
