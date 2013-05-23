@@ -13,4 +13,5 @@ ssws downloads (version unknown)
  * **windows/amd64**: [[zip](windows_amd64/ssws_windows_amd64.zip)]
 
 ### Resources
+ * [LICENSE.md](LICENSE.md)
  * [README.md](README.md)
