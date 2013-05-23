@@ -31,5 +31,5 @@ NOTE: This program has been tested on Windows 8 64bit, and Ubuntu 13.04
 [1]: http://golang.org
 [2]: https://github.com/Intermernet/ssws/blob/master/bin/linux_amd64/ssws_linux_amd64.tar.gz?raw=true
 [3]: https://github.com/Intermernet/ssws/blob/master/bin/linux_amd64/ssws_amd64.deb?raw=true
-[4]: https://github.com/Intermernet/ssws/blob/master/bin/windows_amd64/ssws_windows_amd64.tar.gz?raw=true
-[5]: https://github.com/Intermernet/ssws/blob/master/bin/darwin_amd64/ssws_darwin_amd64.tar.gz?raw=true
+[4]: https://github.com/Intermernet/ssws/blob/master/bin/windows_amd64/ssws_windows_amd64.zip?raw=true
+[5]: https://github.com/Intermernet/ssws/blob/master/bin/darwin_amd64/ssws_darwin_amd64.zip?raw=true
