@@ -46,6 +46,9 @@ func main() {
 	if !strings.HasPrefix(urlpath, ups) {
 		urlpath = ups + urlpath
 	}
+	if !strings.HasSuffix(urlpath, ups) {
+		urlpath = urlpath + ups
+	}
 	http.Handle(urlpath, http.StripPrefix(urlpath, http.FileServer(http.Dir(path))))
 	log.Printf("\nServing files from %s on TCP/IP port %s\nlocalhost only=%t\nURL Path=%s\n", path, port, local, urlpath)
 	if err := http.ListenAndServe(addr, nil); err != nil {
