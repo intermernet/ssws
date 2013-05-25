@@ -13,6 +13,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strconv"
 	"strings"
 )
 
@@ -21,13 +22,13 @@ const (
 	ups = "/"
 )
 
-var port string
+var port int
 var local bool
 var path string
 var urlpath string
 
 func init() {
-	flag.StringVar(&port, "port", "80", "TCP/IP Port to listen on")
+	flag.IntVar(&port, "port", 80, "TCP/IP Port to listen on")
 	flag.BoolVar(&local, "local", true, "Listen on localhost only")
 	flag.StringVar(&path, "path", "www", "Path to serve files from")
 	flag.StringVar(&urlpath, "urlpath", "/", "URL Path to export")
@@ -35,9 +36,10 @@ func init() {
 
 func main() {
 	flag.Parse()
-	addr := "localhost:" + port
+	p := strconv.Itoa(port)
+	addr := "localhost:" + p
 	if local != true {
-		addr = ":" + port
+		addr = ":" + p
 	}
 	ps := string(ps)
 	if !strings.HasSuffix(path, ps) {
@@ -50,7 +52,7 @@ func main() {
 		urlpath = urlpath + ups
 	}
 	http.Handle(urlpath, http.StripPrefix(urlpath, http.FileServer(http.Dir(path))))
-	log.Printf("\nServing files from %s on TCP/IP port %s\nlocalhost only=%t\nURL Path=%s\n", path, port, local, urlpath)
+	log.Printf("\nServing files from %s on TCP/IP port %d\nlocalhost only=%t\nURL Path=%s\n", path, port, local, urlpath)
 	if err := http.ListenAndServe(addr, nil); err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
