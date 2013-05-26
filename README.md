@@ -34,10 +34,10 @@ NOTE: This program has been tested on Windows 8 64bit, and Ubuntu 13.04
 
 [1]: http://golang.org
 [2]: http://python.org
-[3]: https://intermer.net/downloads/ssws/bin/linux_amd64/ssws_linux_amd64.tar.gz
-[4]: https://intermer.net/downloads/ssws/bin/linux_386/ssws_linux_386.tar.gz
-[5]: https://intermer.net/downloads/ssws/bin/windows_amd64/ssws_windows_amd64.zip
-[6]: https://intermer.net/downloads/ssws/bin/windows_386/ssws_windows_386.zip
-[7]: https://intermer.net/downloads/ssws/bin/darwin_amd64/ssws_darwin_amd64.zip
-[8]: https://intermer.net/downloads/ssws/bin/darwin_386/ssws_darwin_386.zip
-[8]: https://intermer.net/downloads/ssws/bin/darwin_386/ssws_darwin_386.zip
+[3]: http://downloads.intermer.net/ssws/bin/linux_amd64/ssws_linux_amd64.tar.gz
+[4]: http://downloads.intermer.net/ssws/bin/linux_386/ssws_linux_386.tar.gz
+[5]: http://downloads.intermer.net/ssws/bin/windows_amd64/ssws_windows_amd64.zip
+[6]: http://downloads.intermer.net/ssws/bin/windows_386/ssws_windows_386.zip
+[7]: http://downloads.intermer.net/ssws/bin/darwin_amd64/ssws_darwin_amd64.zip
+[8]: http://downloads.intermer.net/ssws/bin/darwin_386/ssws_darwin_386.zip
+[8]: http://downloads.intermer.net/ssws/bin/darwin_386/ssws_darwin_386.zip
