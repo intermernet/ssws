@@ -5,7 +5,6 @@ ssws is a Simple Static Web Server
 
 LICENSE: BSD 3-Clause License (see http://opensource.org/licenses/BSD-3-Clause)
 */
-
 package main
 
 import (
