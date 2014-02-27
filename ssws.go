@@ -17,8 +17,8 @@ import (
 )
 
 const (
-	ps  = os.PathSeparator
-	ups = "/"
+	osps = os.PathSeparator
+	ups  = "/"
 )
 
 var port int
@@ -40,7 +40,7 @@ func main() {
 	if local != true {
 		addr = ":" + p
 	}
-	ps := string(ps)
+	ps := string(osps)
 	if !strings.HasSuffix(path, ps) {
 		path = path + ps
 	}
