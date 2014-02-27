@@ -1,5 +1,7 @@
 ###ssws is a Simple Static Web Server written in [Go][1]###
 
+[![Build Status](https://drone.io/github.com/Intermernet/ssws/status.png)](https://drone.io/github.com/Intermernet/ssws/latest)
+
 It's suitable for simple testing of html, css and javascript on your local machine. You can also use it for demonstrating ideas or mockups without a net connection, as a simple, single binary replacement to things like [Python's][2] `SimpleHTTPServer`, or just to play around with web development.
 
 For more serious use, because it's so simple (59 lines of code), and written in [Go's][1] standard libraries, it should be quite reliable and performant, and may be a good choice as a static file server behind a proxy.
